@@ -5,5 +5,10 @@ var router = express.Router();
 router.get('/toscana', function(req, res, next) {
   res.render('index', { title: 'Toscana' });
 });
-
+router.get('/toscana/restaurant', function(req, res, next) {
+  res.render('restaurant');
+});
+router.get('/toscana/menu', function(req, res, next) {
+  res.render('menu');
+});
 module.exports = router;
