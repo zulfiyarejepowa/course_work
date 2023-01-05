@@ -55,4 +55,11 @@ body{
 .resto {
   padding-left:100px;
 }
-
+footer {
+  margin: 0 auto;
+  min-width: 1200px;
+  font-size: 15px;
+}
+.imgFooter {
+  height: 60px;
+}
