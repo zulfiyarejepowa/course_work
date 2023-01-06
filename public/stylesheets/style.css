@@ -63,3 +63,12 @@ footer {
 .imgFooter {
   height: 60px;
 }
+a:hover{
+  color: white;
+}
+a:active {
+  color:blue;
+}
+#icons {
+  display: inline;
+}
