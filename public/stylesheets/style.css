@@ -69,6 +69,7 @@ a:hover{
 a:active {
   color:blue;
 }
-#icons {
-  display: inline;
+
+#img-popular {
+  height: 200px;
 }
