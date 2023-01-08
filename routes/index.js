@@ -14,4 +14,7 @@ router.get('/toscana/menu', function(req, res, next) {
 router.get('/toscana/reservation', function(req, res, next) {
   res.render('reservation');
 });
+router.get('/toscana/contacts', function(req, res, next) {
+  res.render('contacts');
+});
 module.exports = router;

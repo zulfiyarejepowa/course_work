@@ -45,6 +45,9 @@ body{
   max-height: 750px;
   width:1300px
 }
+.image-reserve:hover{
+  opacity: 0.7;
+}
 .reserve-text {
   position: absolute;
   top: 40%;
