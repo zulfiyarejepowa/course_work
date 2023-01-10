@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
 router.get('/toscana', function(req, res, next) {
   res.render('index', { title: 'Toscana' });
 });
@@ -13,6 +12,9 @@ router.get('/toscana/menu', function(req, res, next) {
 });
 router.get('/toscana/reservation', function(req, res, next) {
   res.render('reservation');
+});
+router.post('/toscana/reservation', function(req, res, next) {
+  res.send('Your reserve ');
 });
 router.get('/toscana/contacts', function(req, res, next) {
   res.render('contacts');
