@@ -51,14 +51,34 @@
             Each of our guests will be able to find something special and very tasty for themselves.
           </h3>
         </div>
+
       <div class="container text-center"><br>
-        <button type="button" id="popular" class="btn btn-outline-dark rounded-5" onclick="popular()">Popular</button>
-        <button type="button" class="btn btn-outline-dark rounded-5" onclick="salads()">Appetizers and Salads</button>
-        <button type="button" class="btn btn-outline-dark rounded-5" onclick="meals()">Hot meals</button>
-        <button type="button" class="btn btn-outline-dark rounded-5" onclick="desserts()">Desserts</button>
-        <button type="button" class="btn btn-outline-dark rounded-5" onclick="drinks()">Drinks</button></div>
-        <section>
-          <br>
+        <ul class="menu_categories" style="list-style: none;">
+      <li style="display: inline;">
+        <button type="button" id="popular" class="btn btn-outline-dark rounded-5">
+          <a href="#popular">Popular</a></button>
+      </li>        
+      <li style="display: inline;">
+        <button type="button" class="btn btn-outline-dark rounded-5">
+          <a href="#salads"> Appetizers and Salads</a></button>
+      </li>
+      <li style="display: inline;">
+        <button type="button" class="btn btn-outline-dark rounded-5">
+        <a href="#meals">Hot meals</a></button>
+      </li>
+      <li style="display: inline;">
+        <button type="button" class="btn btn-outline-dark rounded-5">
+        <a href="#desserts">Desserts</a></button>
+      </li>
+      <li style="display: inline;">
+        <button type="button" class="btn btn-outline-dark rounded-5">
+        <a href="#drinks">Drinks</a></button></div>
+      </li>
+      </ul>
+
+      <!-- Popular -->
+        <section id="menuCategory-popular">
+          <div class="container"><br><span id="popular">Popular</span></div>
           <div class="container" id="1">
             <div class="row">
               <div class="col rounded-5" style="border: 1px solid #F8F9FA;">
@@ -81,7 +101,7 @@
                   </div>
                   <div class="container" style="border:2px solid #F8F9FA;">To order online, call 8 65 666768</div><br>
                   <h2 style="font-weight: bold;">Price: 60 TMT</h2>
-                  <button class="btn btn-outline-dark rounded-5 float-end">Order</button>
+                  <button class="btn btn-outline-dark rounded-5 float-end" id="orderBtn">Order</button>
                 </div>
               </div>
             </div>
@@ -106,7 +126,7 @@
                     </div>
                     <div class="container" style="border:2px solid #F8F9FA;">To order online, call 8 65 666768</div><br>
                     <h2 style="font-weight: bold;">Price: 50 TMT</h2>
-                    <button class="btn btn-outline-dark rounded-5 float-end">Order</button>
+                    <button class="btn btn-outline-dark rounded-5 float-end" id="orderBtn2">Order</button>
                   </div>
                 </div>
               </div>
@@ -131,7 +151,7 @@
                     </div>
                     <div class="container" style="border:2px solid #F8F9FA;">To order online, call 8 65 666768</div><br>
                     <h2 style="font-weight: bold;">Price: 55 TMT</h2>
-                    <button class="btn btn-outline-dark rounded-5 float-end">Order</button>
+                    <button class="btn btn-outline-dark rounded-5 float-end" id="orderBtn3">Order</button>
                   </div>
                 </div>
               </div>
@@ -157,7 +177,117 @@
                     </div>
                     <div class="container" style="border:2px solid #F8F9FA;">To order online, call 8 65 666768</div><br>
                     <h2 style="font-weight: bold;">Price: 55 TMT</h2>
-                    <button class="btn btn-outline-dark rounded-5 float-end">Order</button>
+                    <button class="btn btn-outline-dark rounded-5 float-end" id="orderBtn4">Order</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Appetizers and Salads -->
+        <section class="menuCategory-salads">
+          <div class="container"><br><span id="salads">Appetizers and Salads</span></div>
+          <div class="container" id="1">
+            <div class="row">
+              <div class="col rounded-5" style="border: 1px solid #F8F9FA;">
+                <a href="" style="text-decoration: none;">
+              <br><img src="/images/salat.jpg" alt="" id="img-popular" class="rounded">
+                <p class="text-body text-center">Salat </p>
+              <h5 class="text-body">40 TMT</h5></a>
+            <button id="menu" class="btn btn-outline-dark rounded-5 float-end">Show ingridients</button>
+              </div>
+
+          <div class="modal"  id="modal1">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-body">
+                  <img src="/images/salat.jpg" alt="pasta" class="rouded" style="width: 125px; margin-left: 5px;">
+                  <h2 class="text-center" style="display: inline-block; margin-left: 20px;">Pasta Carbonara</h2><br><br>
+                  <div class="container" style="background-color: #F8F9FA;">Description
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis saepe tempora voluptatibus quasi tempore optio excepturi repellendus,
+                     et blanditiis voluptate cum molestiae, dicta nobis vitae voluptatum, cupiditate nostrum ab. Soluta?</p>
+                  </div>
+                  <div class="container" style="border:2px solid #F8F9FA;">To order online, call 8 65 666768</div><br>
+                  <h2 style="font-weight: bold;">Price: 40 TMT</h2>
+                  <button class="btn btn-outline-dark rounded-5 float-end" id="orderBtn">Order</button>
+                </div>
+              </div>
+            </div>
+              
+            <div class="col rounded-5" style="border: 1px solid #F8F9FA;">
+              <a href="" style="text-decoration: none;">
+            <br><img src="/images/salat.jpg" alt="" id="img-popular" class="rounded">
+              <p class="text-body text-center">Salat </p>
+            <h5 class="text-body">40 TMT</h5></a>
+          <button id="menu" class="btn btn-outline-dark rounded-5 float-end">Show ingridients</button>
+            </div>
+            
+              <div class="modal"  id="modal2">
+                <div class="modal-content">
+                  <span class="close" id="span2">&times;</span>
+                  <div class="modal-body">
+                    <img src="/images/salat.jpg" alt="pizza" class="rouded" style="width: 125px; margin-left: 5px;">
+                    <h2 class="text-center" style="display: inline-block; margin-left: 20px;">Salat</h2><br><br>
+                    <div class="container" style="background-color: #F8F9FA;">Description
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi consequatur officia deserunt ea voluptates sequi magni. 
+                      Blanditiis fuga veritatis beatae eum in dignissimos repellat omnis, ipsum consequuntur laboriosam, quo modi!</p>
+                    </div>
+                    <div class="container" style="border:2px solid #F8F9FA;">To order online, call 8 65 666768</div><br>
+                    <h2 style="font-weight: bold;">Price: 40 TMT</h2>
+                    <button class="btn btn-outline-dark rounded-5 float-end" id="orderBtn2">Order</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col rounded-5" style="border: 1px solid #F8F9FA;">
+                <a href="" style="text-decoration: none;">
+              <br><img src="/images/salat.jpg" alt="" id="img-popular" class="rounded">
+                <p class="text-body text-center">Salat </p>
+              <h5 class="text-body">40 TMT</h5></a>
+            <button id="menu" class="btn btn-outline-dark rounded-5 float-end">Show ingridients</button>
+              </div>
+
+              <div class="modal"  id="modal3">
+                <div class="modal-content">
+                  <span class="close" id="span3">&times;</span>
+                  <div class="modal-body">
+                    <img src="/images/tiramisu.jpg" alt="tiramisu" class="rouded" style="width: 125px; margin-left: 5px;">
+                    <h2 class="text-center" style="display: inline-block; margin-left: 20px;">Salat</h2><br><br>
+                    <div class="container" style="background-color: #F8F9FA;">Description
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorem ab alias vel libero laboriosam soluta,
+                       possimus voluptatum illum natus maiores quas culpa aperiam. Labore excepturi eius et possimus nulla?</p>
+                    </div>
+                    <div class="container" style="border:2px solid #F8F9FA;">To order online, call 8 65 666768</div><br>
+                    <h2 style="font-weight: bold;">Price: 40 TMT</h2>
+                    <button class="btn btn-outline-dark rounded-5 float-end" id="orderBtn3">Order</button>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col rounded-5" style="border: 1px solid #F8F9FA;">
+                <a href="" style="text-decoration: none;">
+              <br><img src="/images/salat.jpg" alt="" id="img-popular" class="rounded">
+                <p class="text-body text-center">Salat </p>
+              <h5 class="text-body">40 TMT</h5></a>
+            <button id="menu" class="btn btn-outline-dark rounded-5 float-end">Show ingridients</button>
+              </div>
+
+              <div class="modal"  id="modal4">
+                <div class="modal-content">
+                  <span class="close" id="span4">&times;</span>
+                  <div class="modal-body">
+                    <img src="/images/kappucino.jpg" alt="kappucino" class="rouded" style="width: 125px; margin-left: 5px;">
+                    <h2 class="text-center" style="display: inline-block; margin-left: 20px;">Salat</h2><br><br>
+                    <div class="container" style="background-color: #F8F9FA;">Description
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore quas repellat, quasi possimus facilis similique earum aperiam sunt?
+                       Aut suscipit consequatur unde sequi nostrum rerum commodi, harum ea eveniet esse.</p>
+                    </div>
+                    <div class="container" style="border:2px solid #F8F9FA;">To order online, call 8 65 666768</div><br>
+                    <h2 style="font-weight: bold;">Price: 40 TMT</h2>
+                    <button class="btn btn-outline-dark rounded-5 float-end" id="orderBtn4">Order</button>
                   </div>
                 </div>
               </div>
@@ -171,6 +301,351 @@
       </div>
       </div>
       </div>
+
+      <!-- Hot meals -->
+      <section class="menuCategory-salads">
+        <div class="container"><br><span id="meals">Hot meals</span></div>
+        <div class="container" id="1">
+          <div class="row">
+            <div class="col rounded-5" style="border: 1px solid #F8F9FA;">
+              <a href="" style="text-decoration: none;">
+            <br><img src="/images/carbonara.jpg" alt="" id="img-popular" class="rounded">
+              <p class="text-body text-center">Pasta Carbonara</p>
+            <h5 class="text-body">60 TMT</h5></a>
+          <button id="menu" class="btn btn-outline-dark rounded-5 float-end">Show ingridients</button>
+            </div>
+
+        <div class="modal"  id="modal1">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div class="modal-body">
+                <img src="/images/carbonara.jpg" alt="pasta" class="rouded" style="width: 125px; margin-left: 5px;">
+                <h2 class="text-center" style="display: inline-block; margin-left: 20px;">Pasta Carbonara</h2><br><br>
+                <div class="container" style="background-color: #F8F9FA;">Description
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis saepe tempora voluptatibus quasi tempore optio excepturi repellendus,
+                   et blanditiis voluptate cum molestiae, dicta nobis vitae voluptatum, cupiditate nostrum ab. Soluta?</p>
+                </div>
+                <div class="container" style="border:2px solid #F8F9FA;">To order online, call 8 65 666768</div><br>
+                <h2 style="font-weight: bold;">Price: 60 TMT</h2>
+                <button class="btn btn-outline-dark rounded-5 float-end" id="orderBtn">Order</button>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col rounded-5" style="border: 1px solid #F8F9FA;">
+            <a href="" style="text-decoration: none;">
+          <br><img src="/images/carbonara.jpg" alt="" id="img-popular" class="rounded">
+            <p class="text-body text-center">Pasta Carbonara</p>
+          <h5 class="text-body">60 TMT</h5></a>
+        <button id="menu" class="btn btn-outline-dark rounded-5 float-end">Show ingridients</button>
+          </div>
+
+      <div class="modal"  id="modal2">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+              <img src="/images/carbonara.jpg" alt="pasta" class="rouded" style="width: 125px; margin-left: 5px;">
+              <h2 class="text-center" style="display: inline-block; margin-left: 20px;">Pasta Carbonara</h2><br><br>
+              <div class="container" style="background-color: #F8F9FA;">Description
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis saepe tempora voluptatibus quasi tempore optio excepturi repellendus,
+                 et blanditiis voluptate cum molestiae, dicta nobis vitae voluptatum, cupiditate nostrum ab. Soluta?</p>
+              </div>
+              <div class="container" style="border:2px solid #F8F9FA;">To order online, call 8 65 666768</div><br>
+              <h2 style="font-weight: bold;">Price: 60 TMT</h2>
+              <button class="btn btn-outline-dark rounded-5 float-end" id="orderBtn2">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col rounded-5" style="border: 1px solid #F8F9FA;">
+          <a href="" style="text-decoration: none;">
+          <br><img src="/images/margo-pizza.jpg" alt="" id="img-popular" class="rounded">
+          <p class="text-body text-center">Pizza Margarita</p>
+          <h5 class="text-body">50 TMT</h5></a>           
+          <button id="menu-btn" class="btn btn-outline-dark rounded-5 float-end">Show ingridients</button>
+        </div>
+
+          <div class="modal"  id="modal2">
+            <div class="modal-content">
+              <span class="close" id="span2">&times;</span>
+              <div class="modal-body">
+                <img src="/images/margo-pizza.jpg" alt="pizza" class="rouded" style="width: 125px; margin-left: 5px;">
+                <h2 class="text-center" style="display: inline-block; margin-left: 20px;">Pizza Margarita</h2><br><br>
+                <div class="container" style="background-color: #F8F9FA;">Description
+                <p>Pizza Margherita is a typical Neapolitan pizza made with San Marzano tomatoes,
+                  mozzarella cheese, fresh basil, salt and extra virgin olive oil.</p>
+                </div>
+                <div class="container" style="border:2px solid #F8F9FA;">To order online, call 8 65 666768</div><br>
+                <h2 style="font-weight: bold;">Price: 50 TMT</h2>
+                <button class="btn btn-outline-dark rounded-5 float-end" id="orderBtn2">Order</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col rounded-5" style="border: 1px solid #F8F9FA;">
+            <a href="" style="text-decoration: none;">
+            <br><img src="/images/margo-pizza.jpg" alt="" id="img-popular" class="rounded">
+            <p class="text-body text-center">Pizza Margarita</p>
+            <h5 class="text-body">50 TMT</h5></a>           
+            <button id="menu-btn" class="btn btn-outline-dark rounded-5 float-end">Show ingridients</button>
+          </div>
+
+            <div class="modal"  id="modal2">
+              <div class="modal-content">
+                <span class="close" id="span2">&times;</span>
+                <div class="modal-body">
+                  <img src="/images/margo-pizza.jpg" alt="pizza" class="rouded" style="width: 125px; margin-left: 5px;">
+                  <h2 class="text-center" style="display: inline-block; margin-left: 20px;">Pizza Margarita</h2><br><br>
+                  <div class="container" style="background-color: #F8F9FA;">Description
+                  <p>Pizza Margherita is a typical Neapolitan pizza made with San Marzano tomatoes,
+                    mozzarella cheese, fresh basil, salt and extra virgin olive oil.</p>
+                  </div>
+                  <div class="container" style="border:2px solid #F8F9FA;">To order online, call 8 65 666768</div><br>
+                  <h2 style="font-weight: bold;">Price: 50 TMT</h2>
+                  <button class="btn btn-outline-dark rounded-5 float-end" id="orderBtn2">Order</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Desserts -->
+    <section class="menuCategory-salads">
+      <div class="container"><br><span id="desserts">Desserts</span></div>
+      <div class="container" id="1">
+        <div class="row">
+          <div class="col rounded-5" style="border: 1px solid #F8F9FA;">
+            <a href="" style="text-decoration: none;">
+          <br><img src="/images/tiramisu.jpg" alt="" id="img-popular" class="rounded">
+        <p class="text-body text-center">Tiramisu</p>
+        <h5 class="text-body">55 TMT</h5></a>
+        <button id="menu-btn3" class="btn btn-outline-dark rounded-5 float-end">Show ingridients</button>
+          </div>
+
+          <div class="modal"  id="modal3">
+            <div class="modal-content">
+              <span class="close" id="span3">&times;</span>
+              <div class="modal-body">
+                <img src="/images/tiramisu.jpg" alt="tiramisu" class="rouded" style="width: 125px; margin-left: 5px;">
+                <h2 class="text-center" style="display: inline-block; margin-left: 20px;">Tiramisu</h2><br><br>
+                <div class="container" style="background-color: #F8F9FA;">Description
+                <p>Tiramisu is an Italian multi-layered dessert that includes mascarpone cheese, coffee, chicken eggs,
+                  sugar and savoiardi biscuits. The dessert is powdered with cocoa powder.</p>
+                </div>
+                <div class="container" style="border:2px solid #F8F9FA;">To order online, call 8 65 666768</div><br>
+                <h2 style="font-weight: bold;">Price: 55 TMT</h2>
+                <button class="btn btn-outline-dark rounded-5 float-end" id="orderBtn3">Order</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col rounded-5" style="border: 1px solid #F8F9FA;">
+            <a href="" style="text-decoration: none;">
+          <br><img src="/images/tiramisu.jpg" alt="" id="img-popular" class="rounded">
+        <p class="text-body text-center">Tiramisu</p>
+        <h5 class="text-body">55 TMT</h5></a>
+        <button id="menu-btn3" class="btn btn-outline-dark rounded-5 float-end">Show ingridients</button>
+          </div>
+
+          <div class="modal"  id="modal3">
+            <div class="modal-content">
+              <span class="close" id="span3">&times;</span>
+              <div class="modal-body">
+                <img src="/images/tiramisu.jpg" alt="tiramisu" class="rouded" style="width: 125px; margin-left: 5px;">
+                <h2 class="text-center" style="display: inline-block; margin-left: 20px;">Tiramisu</h2><br><br>
+                <div class="container" style="background-color: #F8F9FA;">Description
+                <p>Tiramisu is an Italian multi-layered dessert that includes mascarpone cheese, coffee, chicken eggs,
+                  sugar and savoiardi biscuits. The dessert is powdered with cocoa powder.</p>
+                </div>
+                <div class="container" style="border:2px solid #F8F9FA;">To order online, call 8 65 666768</div><br>
+                <h2 style="font-weight: bold;">Price: 55 TMT</h2>
+                <button class="btn btn-outline-dark rounded-5 float-end" id="orderBtn3">Order</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col rounded-5" style="border: 1px solid #F8F9FA;">
+            <a href="" style="text-decoration: none;">
+          <br><img src="/images/tiramisu.jpg" alt="" id="img-popular" class="rounded">
+        <p class="text-body text-center">Tiramisu</p>
+        <h5 class="text-body">55 TMT</h5></a>
+        <button id="menu-btn3" class="btn btn-outline-dark rounded-5 float-end">Show ingridients</button>
+          </div>
+
+          <div class="modal"  id="modal3">
+            <div class="modal-content">
+              <span class="close" id="span3">&times;</span>
+              <div class="modal-body">
+                <img src="/images/tiramisu.jpg" alt="tiramisu" class="rouded" style="width: 125px; margin-left: 5px;">
+                <h2 class="text-center" style="display: inline-block; margin-left: 20px;">Tiramisu</h2><br><br>
+                <div class="container" style="background-color: #F8F9FA;">Description
+                <p>Tiramisu is an Italian multi-layered dessert that includes mascarpone cheese, coffee, chicken eggs,
+                  sugar and savoiardi biscuits. The dessert is powdered with cocoa powder.</p>
+                </div>
+                <div class="container" style="border:2px solid #F8F9FA;">To order online, call 8 65 666768</div><br>
+                <h2 style="font-weight: bold;">Price: 55 TMT</h2>
+                <button class="btn btn-outline-dark rounded-5 float-end" id="orderBtn3">Order</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col rounded-5" style="border: 1px solid #F8F9FA;">
+            <a href="" style="text-decoration: none;">
+          <br><img src="/images/tiramisu.jpg" alt="" id="img-popular" class="rounded">
+        <p class="text-body text-center">Tiramisu</p>
+        <h5 class="text-body">55 TMT</h5></a>
+        <button id="menu-btn3" class="btn btn-outline-dark rounded-5 float-end">Show ingridients</button>
+          </div>
+
+          <div class="modal"  id="modal3">
+            <div class="modal-content">
+              <span class="close" id="span3">&times;</span>
+              <div class="modal-body">
+                <img src="/images/tiramisu.jpg" alt="tiramisu" class="rouded" style="width: 125px; margin-left: 5px;">
+                <h2 class="text-center" style="display: inline-block; margin-left: 20px;">Tiramisu</h2><br><br>
+                <div class="container" style="background-color: #F8F9FA;">Description
+                <p>Tiramisu is an Italian multi-layered dessert that includes mascarpone cheese, coffee, chicken eggs,
+                  sugar and savoiardi biscuits. The dessert is powdered with cocoa powder.</p>
+                </div>
+                <div class="container" style="border:2px solid #F8F9FA;">To order online, call 8 65 666768</div><br>
+                <h2 style="font-weight: bold;">Price: 55 TMT</h2>
+                <button class="btn btn-outline-dark rounded-5 float-end" id="orderBtn3">Order</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- Drinks -->
+  <section class="menuCategory-salads">
+    <div class="container"><br><span id="drinks">Drinks</span></div>
+    <div class="container" id="1">
+      <div class="row">
+        <div class="col rounded-5" style="border: 1px solid #F8F9FA;">
+          <a href="" style="text-decoration: none;">
+          <br><img src="/images/kappucino.jpg" alt="" id="img-popular" class="rounded">
+        <p class="text-body text-center">Cappucino</p>
+        <h5 class="text-body">30 TMT</h5></a>
+        <button id="menu-btn4" class="btn btn-outline-dark rounded-5 float-end">Show ingridients</button>
+        </div>
+
+        <div class="modal"  id="modal4">
+          <div class="modal-content">
+            <span class="close" id="span4">&times;</span>
+            <div class="modal-body">
+              <img src="/images/kappucino.jpg" alt="kappucino" class="rouded" style="width: 125px; margin-left: 5px;">
+              <h2 class="text-center" style="display: inline-block; margin-left: 20px;">Kappucino</h2><br><br>
+              <div class="container" style="background-color: #F8F9FA;">Description
+              <p>Cappuccino is an Italian coffee drink based on espresso with the addition of heated frothed milk.
+              (Espresso is a method of preparing coffee by passing hot water under pressure through a filter with ground coffee)</p>
+              </div>
+              <div class="container" style="border:2px solid #F8F9FA;">To order online, call 8 65 666768</div><br>
+              <h2 style="font-weight: bold;">Price: 55 TMT</h2>
+              <button class="btn btn-outline-dark rounded-5 float-end" id="orderBtn4">Order</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col rounded-5" style="border: 1px solid #F8F9FA;">
+          <a href="" style="text-decoration: none;">
+          <br><img src="/images/kappucino.jpg" alt="" id="img-popular" class="rounded">
+        <p class="text-body text-center">Cappucino</p>
+        <h5 class="text-body">30 TMT</h5></a>
+        <button id="menu-btn4" class="btn btn-outline-dark rounded-5 float-end">Show ingridients</button>
+        </div>
+
+        <div class="modal"  id="modal4">
+          <div class="modal-content">
+            <span class="close" id="span4">&times;</span>
+            <div class="modal-body">
+              <img src="/images/kappucino.jpg" alt="kappucino" class="rouded" style="width: 125px; margin-left: 5px;">
+              <h2 class="text-center" style="display: inline-block; margin-left: 20px;">Kappucino</h2><br><br>
+              <div class="container" style="background-color: #F8F9FA;">Description
+              <p>Cappuccino is an Italian coffee drink based on espresso with the addition of heated frothed milk.
+              (Espresso is a method of preparing coffee by passing hot water under pressure through a filter with ground coffee)</p>
+              </div>
+              <div class="container" style="border:2px solid #F8F9FA;">To order online, call 8 65 666768</div><br>
+              <h2 style="font-weight: bold;">Price: 55 TMT</h2>
+              <button class="btn btn-outline-dark rounded-5 float-end" id="orderBtn4">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col rounded-5" style="border: 1px solid #F8F9FA;">
+          <a href="" style="text-decoration: none;">
+          <br><img src="/images/kappucino.jpg" alt="" id="img-popular" class="rounded">
+        <p class="text-body text-center">Cappucino</p>
+        <h5 class="text-body">30 TMT</h5></a>
+        <button id="menu-btn4" class="btn btn-outline-dark rounded-5 float-end">Show ingridients</button>
+        </div>
+
+        <div class="modal"  id="modal4">
+          <div class="modal-content">
+            <span class="close" id="span4">&times;</span>
+            <div class="modal-body">
+              <img src="/images/kappucino.jpg" alt="kappucino" class="rouded" style="width: 125px; margin-left: 5px;">
+              <h2 class="text-center" style="display: inline-block; margin-left: 20px;">Kappucino</h2><br><br>
+              <div class="container" style="background-color: #F8F9FA;">Description
+              <p>Cappuccino is an Italian coffee drink based on espresso with the addition of heated frothed milk.
+              (Espresso is a method of preparing coffee by passing hot water under pressure through a filter with ground coffee)</p>
+              </div>
+              <div class="container" style="border:2px solid #F8F9FA;">To order online, call 8 65 666768</div><br>
+              <h2 style="font-weight: bold;">Price: 55 TMT</h2>
+              <button class="btn btn-outline-dark rounded-5 float-end" id="orderBtn4">Order</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col rounded-5" style="border: 1px solid #F8F9FA;">
+          <a href="" style="text-decoration: none;">
+          <br><img src="/images/kappucino.jpg" alt="" id="img-popular" class="rounded">
+        <p class="text-body text-center">Cappucino</p>
+        <h5 class="text-body">30 TMT</h5></a>
+        <button id="menu-btn4" class="btn btn-outline-dark rounded-5 float-end">Show ingridients</button>
+        </div>
+
+        <div class="modal"  id="modal4">
+          <div class="modal-content">
+            <span class="close" id="span4">&times;</span>
+            <div class="modal-body">
+              <img src="/images/kappucino.jpg" alt="kappucino" class="rouded" style="width: 125px; margin-left: 5px;">
+              <h2 class="text-center" style="display: inline-block; margin-left: 20px;">Kappucino</h2><br><br>
+              <div class="container" style="background-color: #F8F9FA;">Description
+              <p>Cappuccino is an Italian coffee drink based on espresso with the addition of heated frothed milk.
+              (Espresso is a method of preparing coffee by passing hot water under pressure through a filter with ground coffee)</p>
+              </div>
+              <div class="container" style="border:2px solid #F8F9FA;">To order online, call 8 65 666768</div><br>
+              <h2 style="font-weight: bold;">Price: 55 TMT</h2>
+              <button class="btn btn-outline-dark rounded-5 float-end" id="orderBtn4">Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
 
   <!-- Footer -->
    <footer class="bg-light" id="footer">

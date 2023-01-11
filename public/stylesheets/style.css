@@ -1,5 +1,5 @@
 body{
-  font-family: 'Merienda', sans-serif;
+  font-family: 'Merienda';
   font-size: 20px;
   font-style: italic;
 }
@@ -152,4 +152,59 @@ a:active {
   text-align: right;
   font-size: 28px;
   font-weight: bold;
+}
+#menu {
+  transition: 0.2s;
+}
+#menu:hover {
+  transform: scale(0.90);
+}
+#menu-btn {
+  transition: 0.2s;
+}
+#menu-btn:hover {
+  transform: scale(0.90);
+}
+#menu-btn3 {
+  transition: 0.2s;
+}
+#menu-btn3:hover {
+  transform: scale(0.90);
+}
+#menu-btn4 {
+  transition: 0.2s;
+}
+#menu-btn4:hover {
+  transform: scale(0.90);
+}
+#orderBtn {
+  transition: 0.2s;
+}
+#orderBtn:hover {
+  transform: scale(1.15);
+}
+#reserveBtn {
+  transition: 0.2s;
+}
+#reserveBtn:hover {
+  transform: scale(0.95);
+}
+#contactSubmit {
+  transition: 0.2s;
+}
+#contactSubmit:hover {
+  transform: scale(0.95);
+}
+.menu_categories > li > button > a {
+  text-decoration: none;
+  color: black;
+}
+.menu_categories > li > button > a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+.menu_categories > li > button:hover {
+  text-decoration: none;
+  color: black;
 }
