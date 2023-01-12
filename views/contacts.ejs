@@ -44,7 +44,7 @@
         <br><br><br><br><br>
                <h2 class="text-center" >~ Contacts ~</h2>
            </div>
-        <div class="container bg-light">
+        <div class="container bg-light"  style="border: 1px solid grey;">
             <div class="row">
                 <div class="col-6">
                     <h2 class="text-center">Italian restaurant "Toscana"</h2>
@@ -63,10 +63,10 @@
                 </div>
                 <div class="col-6">
                     <h3 class="text-center">Let's Chat</h3>
-                    <form action="" method="post">
+                    <form action="/toscana/contacts" method="post">
                         <div class="form-froup">
                             <label for="contactName">Your Name</label>
-                            <input type="text" name="name" id="contactName" class="form-control" placeholder="Name"> 
+                            <input type="text" name="username" id="contactName" class="form-control" placeholder="Name"> 
                         </div>
                         <div class="form-group">
                             <label for="contactEmail">Your Email</label>
@@ -77,8 +77,8 @@
                             <textarea name="comment" id="" rows="4" cols="61" class="rounded" style="border: 1px solid #CED4DA;"></textarea>
                         </div> 
                         <div class="form-group">
-                            <input type="submit" name="cSubmit" id="contactSubmit" value="Send Message" class="btn btn-dark rounded">
-                        </div>  
+                            <input type="submit" id="contactSubmit" value="Send Message" class="btn btn-dark rounded">
+                        </div>
                     </form>
                 </div>
             </div>

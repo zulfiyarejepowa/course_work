@@ -101,24 +101,3 @@
     function popular() {
         document.getElementById('categoryOfMenu-popular').style.display = "block";
     }
-    
-    // scroll onclick
-    // const menuCategories = document.querySelectorAll('.menu_categories[data-goto]');
-    // if(menuCategories > 0) {
-    //     menuCategories.forEach(menuCategories => {
-    //         menuCategories.addEventListener("click", menuCategoriesOnclick);
-    //     });
-    //     function menuCategoriesOnclick(e) {
-    //         const menuCategory = e.target;
-    //         if(menuCategory.dataset.goto && document.querySelector(menuCategory.dataset.goto)) {
-    //             const gotoBlock = document.querySelector(menuCategory.dataset.goto);
-    //             const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.getElementsByClassName("navbar").offsetHeight;
-
-    //             window.scrollTo({
-    //                 top: gotoBlockValue,
-    //                 behavior: "smooth"
-    //             });
-    //             e.preventDefault();
-    //         }
-    //     }
-    // }

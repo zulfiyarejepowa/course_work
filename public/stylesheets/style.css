@@ -3,6 +3,10 @@ body{
   font-size: 20px;
   font-style: italic;
 }
+nav {
+  z-index: 2;
+  border-bottom: 1px solid gray;
+}
 .nav-item{
  padding-right: 12px;
  padding-left: 12px;
