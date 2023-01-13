@@ -2,7 +2,7 @@
     let btn = document.getElementById("menu");
     let span = document.getElementsByClassName("close")[0];
     
-    btn.onclick = function() {
+    btn.onclick =function() {
         modal.style.display = "block";
         modal.style.overflow = 'hidden';
         document.body.style.opacity = "0.7";
@@ -14,7 +14,7 @@
     }
     window.onclick = function(event) {
         if(event.target == modal){
-            modal.style.display = "none"
+        modal.style.display = "none"
         }
         document.body.style.opacity = "1";
         document.body.style.overflow = "scroll";

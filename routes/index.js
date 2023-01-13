@@ -18,7 +18,7 @@ router.get('/toscana/reservation', function(req, res, next) {
 });
 router.post('/toscana/reservation', function(req, res, next) {
   console.log(req.body);
-  res.render('reservation');
+  res.redirect('/toscana/reservation');
 });
 router.get('/toscana/contacts', function(req, res, next) {
   console.log(req.cookies);
@@ -29,11 +29,11 @@ router.post('/toscana/contacts', function(req, res, next) {
   {
     let userCookies = [];
     let cookie = Helpers.makeid(10);
-    res.cookie("users", cookie)
+    res.cookie("user", cookie)
     userCookies.push({username:req.body.username, cookie:cookie});
     console.log(userCookies);
   }
-  res.send('Your letter has been sent, you will be answered within a day');
+  res.redirect('/toscana/contacts');
   console.log(req.body);
 });
 

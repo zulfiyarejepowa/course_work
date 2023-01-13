@@ -187,6 +187,24 @@ a:active {
 #orderBtn:hover {
   transform: scale(1.15);
 }
+#orderBtn2 {
+  transition: 0.2s;
+}
+#orderBtn2:hover {
+  transform: scale(1.15);
+}
+#orderBtn3 {
+  transition: 0.2s;
+}
+#orderBtn3:hover {
+  transform: scale(1.15);
+}
+#orderBtn4 {
+  transition: 0.2s;
+}
+#orderBtn4:hover {
+  transform: scale(1.15);
+}
 #reserveBtn {
   transition: 0.2s;
 }

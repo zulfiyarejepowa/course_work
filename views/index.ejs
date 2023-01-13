@@ -10,15 +10,17 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar fixed-top  navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+      <div class="container-fluid">
       <a class="navbar-brand" href="#">
          <img width="300" height="90" class="d-inline-block" alt="" id="logo">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" 
+      aria-controls="navbarContent" aria-expanded="false">
          <span class="navbar-toggler-icon"></span>
       </button>
-       <div class="collapse navbar-collapse navbar-right" id="navbarText">
-         <ul class="nav navbar-nav navbar-right" id="navig">
+       <div class="collapse navbar-collapse navbar-right" id="navbarContent">
+         <ul class="nav navbar-nav navbar-right me-auto mb-2 mb-lg-0" id="navig">
           
              <li class="nav-item active">
                <a class="nav-link" href="/toscana">Welcome</a>
@@ -42,21 +44,16 @@
   <!-- End Navigation -->
   <!--- Start Carousel -->
   <main>
-  <div id="carouselControls" class="carousel slide carousel-fade" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselControls" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselControls" data-slide-to="1"></li>
-      <li data-target="#carouselControls" data-slide-to="2"></li>
-    </ol>
+  <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div class="carousel-item active" data-bs-interval="4000">
           <img class="d-block w-100" alt="First slide" id="slider1">
           <div class="carousel-caption">
             <h2>Welcome!</h2>
           <p>...</p>
         </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="3000">
             <img class="d-block w-100 " alt="Second slide" id="slider2">
             <div class="carousel-caption">
             <h2>Traditional Italian Cuisine</h2>
@@ -71,12 +68,14 @@
         </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden = "true"></span>
-    </a>
-    <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
 </div>
 </main>
   <!--- End of Carousel -->
@@ -98,7 +97,7 @@
                <a href="/toscana/restaurant" class="text-center text-body">About us</a>
           </div>
               <div class="col-sm-6"><br>
-            <img id="img1" alt=".">
+            <img id="img1" alt="." style="display:inline-block; height: auto; max-width: 100%;">
             </div>
           </div>
           </div><br>
