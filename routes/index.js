@@ -1,4 +1,5 @@
 let express = require('express');
+const { append } = require('../controllers/DatabaseManager');
 const DatabaseManager = require('../controllers/DatabaseManager');
 const Helpers = require('../controllers/Helpers');
 let router = express.Router();
@@ -25,6 +26,8 @@ router.get('/toscana/contacts', function(req, res, next) {
   res.render('contacts');
 });
 router.post('/toscana/contacts', function(req, res, next) {
+  console.log(req.body);
+  DatabaseManager.append(req.body);
   if(DatabaseManager.hasUser(req.body.username, req.body.email))
   {
     let userCookies = [];
@@ -34,7 +37,6 @@ router.post('/toscana/contacts', function(req, res, next) {
     console.log(userCookies);
   }
   res.redirect('/toscana/contacts');
-  console.log(req.body);
 });
 
 module.exports = router;
